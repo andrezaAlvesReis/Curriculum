@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Sarala", sans-serif;
   flex-direction: column;
 }
@@ -16,9 +17,43 @@ body {
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  padding: 10px;
+  color: #333;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: #e0e0e0;
+  cursor: pointer;
 }
 
 .redesSociais {
@@ -29,6 +64,7 @@ body {
   transition: border 1s;
   position: relative;
 }
+
 .redesSociais:hover {
   border: 1px solid #f8eeee;
 }
@@ -36,11 +72,10 @@ body {
 .gitHub {
   height: 379px;
   width: 300px;
-  background: #c2cac3;
-  border-radius: 10px;
-  transition: brackground 0.8s;
-  overflow: hidden;
   background: #090a09;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
   box-shadow: 0 70px 63px -60px;
   display: flex;
   justify-content: center;
@@ -49,7 +84,7 @@ body {
   cursor: pointer;
 }
 
-.gitHub :hover {
+.gitHub:hover {
   background: #0e0d0d;
 }
 
